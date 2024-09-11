@@ -1,15 +1,20 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+// Load the Integral CF font
+const integralCF = localFont({
+  src: "./fonts/integralCF.otf", // Ensure correct path to your font file
+  display: "swap",               // Ensures text is visible during font loading
+  weight: "400",                 // Font weight (adjust if needed)
+  variable: "--font-integral-cf", // CSS variable to reference the font
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+// Load the Satoshi font
+const satoshi = localFont({
+  src: "./fonts/Satoshi-Medium.ttf", // Ensure correct path to your font file
+  display: "swap",                   // Ensures text is visible during font loading
+  weight: "400",                     // Font weight (adjust if needed)
+  variable: "--font-satoshi-medium",  // CSS variable for the Satoshi font
 });
 
 export const metadata = {
@@ -21,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${integralCF.variable} ${satoshi.variable} font-sans antialiased`} // Include both font variables
       >
         {children}
       </body>
