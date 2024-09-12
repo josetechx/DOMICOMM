@@ -8,7 +8,7 @@ import Image from 'next/image'
 const MainNav = () => {
   return (
     <header className=''>
-      <nav className='container mx-auto px-2 p-4 md:w-[700px] lg:w-[1000px] lg:max-w-[1024px]  flex justify-between lg:justify-start items-center gap-4'>
+      <nav className='width-container flex justify-between lg:justify-start items-center gap-4'>
         <div className='flex items-center justify-center px-2 gap-2'>
             <Image src={navbarIcon} alt='navbar-icon' className='lg:hidden'/>
             <h3 className='text-3xl font-bold font-integral'>SHOP.CO</h3>

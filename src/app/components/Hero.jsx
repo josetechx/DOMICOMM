@@ -14,7 +14,7 @@ const Hero = () => {
         className="hidden lg:block lg:relative" 
       />
 
-      <div className="top-12 sm-max-w-[400px] container mx-auto py-4 px-2 md:w-[700px] lg:w-[1000px] lg:max-w-[1024px] xl:w-full flex justify-between lg:justify-start items-center gap-4">
+      <div className="top-12 sm-max-w-[400px] width-container flex justify-between lg:justify-start items-center gap-4">
         <div className="px-2 lg:absolute lg:bottom-24 xl:top-60">
           <h1 className="text-4xl sm:text-5xl md:w-full md:text-6xl lg:w-[577px] font-integral text-start">
             FIND CLOTHES THAT MATCHES YOUR STYLE

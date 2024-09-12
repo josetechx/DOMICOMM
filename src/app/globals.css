@@ -6,5 +6,7 @@
 
 
 @layer utilities {
-  
+  .width-container{
+    @apply md:w-[700px] lg:w-[1239px] lg:max-w-[1024px] container mx-auto px-2 py-4  xl:w-full;
+  }
 }
