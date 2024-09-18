@@ -79,3 +79,86 @@ export const topSelling = [
 ]
 
 export const brands = [gucci, versache, prada, calvin, zara]
+
+export const reviews = [
+  {
+    id: 1,
+    reviewerName: "Jane Doe",
+    rating: 4.5,
+    comment: "Great product! It exceeded my expectations. The quality is amazing.",
+    date: "2023-08-25",
+    likes: 20,
+  },
+  {
+    id: 2,
+    reviewerName: "John Smith",
+    rating: 3.0,
+    comment: "The product is okay, but the delivery was slow. Could be better.",
+    date: "2023-08-28",
+    likes: 12,
+  },
+  {
+    id: 3,
+    reviewerName: "Alice Johnson",
+    rating: 5.0,
+    comment: "Absolutely fantastic! The design is beautiful and works perfectly.",
+    date: "2023-09-01",
+    likes: 35,
+  },
+  {
+    id: 4,
+    reviewerName: "Michael Brown",
+    rating: 2.5,
+    comment: "Not what I expected. The product feels flimsy and the customer support is slow.",
+    date: "2023-09-05",
+    likes: 5,
+  },
+  {
+    id: 5,
+    reviewerName: "Emily Davis",
+    rating: 4.0,
+    comment: "Good product, decent value for the price. I would buy it again.",
+    date: "2023-09-07",
+    likes: 18,
+  },
+  {
+    id: 6,
+    reviewerName: "Robert Wilson",
+    rating: 4.8,
+    comment: "Exceeded all my expectations. Highly recommend this to everyone!",
+    date: "2023-09-10",
+    likes: 40,
+  },
+  {
+    id: 7,
+    reviewerName: "Sarah Thompson",
+    rating: 3.8,
+    comment: "The product is good, but packaging could be improved.",
+    date: "2023-09-12",
+    likes: 22,
+  },
+  {
+    id: 8,
+    reviewerName: "David Martin",
+    rating: 4.2,
+    comment: "Good value for money. It works as expected and looks great.",
+    date: "2023-09-15",
+    likes: 30,
+  },
+  {
+    id: 9,
+    reviewerName: "Laura White",
+    rating: 5.0,
+    comment: "I'm very happy with this purchase! Fast delivery and excellent product.",
+    date: "2023-09-17",
+    likes: 50,
+  },
+  {
+    id: 10,
+    reviewerName: "James Green",
+    rating: 2.0,
+    comment: "Very disappointed. The product broke within a week of use.",
+    date: "2023-09-20",
+    likes: 3,
+  }
+];

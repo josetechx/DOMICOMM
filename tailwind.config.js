@@ -6,15 +6,6 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    animation: {
-      fade: 'fadeIn 0.5s ease-in',
-    },
-    keyframes: {
-      fadeIn: {
-        '0%': {transform: 'translateY(-5px)' }, // Fixed `translateX`
-        '100%': {transform: 'translateY(0)' },    // Added `transform` property
-      },
-    },
     fontSize: {
       xs: ['16px', '22px'],
       sm: ['20px', '24px'],
@@ -29,6 +20,25 @@ module.exports = {
       '8xl': ['96px', '106px']
     },
     extend: {
+      animation: {
+        // fade: 'fadeIn 0.5s ease-in',
+        marquee: "marquee var(--duration) linear infinite",
+        "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+      },
+      keyframes: {
+        // fadeIn: {
+        //   '0%': {transform: 'translateY(-5px)' }, // Fixed `translateX`
+        //   '100%': {transform: 'translateY(0)' },    // Added `transform` property
+        // },
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+        "marquee-vertical": {
+          from: { transform: "translateY(0)" },
+          to: { transform: "translateY(calc(-100% - var(--gap)))" },
+        },
+      },
       fontFamily: {
         integral: ['var(--font-integral-cf)', 'sans-serif'],
         satoshi: ['var(--font-satoshi-medium)', 'sans-serif'],

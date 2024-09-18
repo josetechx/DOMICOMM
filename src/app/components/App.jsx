@@ -6,6 +6,7 @@ import Brands from './Brands'
 import NewArrival from './NewArrival'
 import TopSelling from './TopSelling'
 import BrowseByCategory from './BrowseByCategory'
+import { CustomersReview } from './CustomersReview'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <NewArrival/>
         <TopSelling/>
         <BrowseByCategory />
+        <CustomersReview/>
       </section>
     </main>
   )

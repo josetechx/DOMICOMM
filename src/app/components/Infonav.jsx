@@ -10,7 +10,7 @@ const Infonav = () => {
             <p className="text-white text-[12px] w-full text-center">
              Sign up and get 20% off your first order. <Link href="/signup" className="underline underline-offset-[4px]">Sign Up Now</Link>
              </p>  
-         <p  className="hidden md:block text-lg text-white text-center cursor-pointer px-2">x</p>
+         <p  className="hidden md:block text-lg text-white text-center cursor-pointer">x</p>
         </div>
     </div>
   );

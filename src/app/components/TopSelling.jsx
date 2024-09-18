@@ -21,4 +21,4 @@ const TopSelling = () => {
   
 }
 
-export default TopSelling
+export default TopSelling;
