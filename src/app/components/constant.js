@@ -162,3 +162,81 @@ export const reviews = [
     likes: 3,
   }
 ];
+
+// footer links
+
+export const company = [
+  {
+    name: "About",
+    link: "/about"
+  },
+  {
+    name: "Features",
+    link: "/features"
+  },
+  {
+    name: "Works",
+    link: "/works"
+  },
+  {
+    name: "Career",
+    link: "/career"
+  }
+];
+
+export const help = [
+  {
+    name: "Customer Support",
+    link: "/customer-support"
+  },
+  {
+    name: "Delivery Details",
+    link: "/delivery-details"
+  },
+  {
+    name: "Terms & Conditions",
+    link: "/terms-conditions"
+  },
+  {
+    name: "Privacy Policy",
+    link: "/privacy-policy"
+  }
+];
+
+export const faq = [
+  {
+    name: "Account",
+    link: "/faq/account"
+  },
+  {
+    name: "Manage Deliveries",
+    link: "/faq/manage-deliveries"
+  },
+  {
+    name: "Orders",
+    link: "/faq/orders"
+  },
+  {
+    name: "Payments",
+    link: "/faq/payments"
+  }
+];
+
+export const resources = [
+  {
+    name: "Free eBooks",
+    link: "/resources/free-ebooks"
+  },
+  {
+    name: "Development Tutorial",
+    link: "/resources/development-tutorial"
+  },
+  {
+    name: "How to - Blog",
+    link: "/resources/how-to-blog"
+  },
+  {
+    name: "Youtube Playlist",
+    link: "/resources/youtube-playlist"
+  }
+]

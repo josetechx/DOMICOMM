@@ -11,12 +11,12 @@ export function CustomersReview() {
     <div className='width-container mt-4'>
           <h3 className="text-start font-integral text-4xl mb-12">OUR HAPPY CUSTOMERS</h3>
       </div>
-    <div className="relative  w-full flex items-center overflow-hidden bg-white md:shadow-xl">
+    <div className="relative w-full flex items-center overflow-hidden bg-transparent mb-4">
       <motion.div
         className="flex flex-row"
         animate={{ x: ['0%', `-${totalWidth}px`] }} // Move from start to total width
         transition={{
-          duration: 10, // Duration for one full scroll
+          duration: 70, // Duration for one full scroll
           ease: 'linear',
           repeat: Infinity, // Continuous scrolling
         }}

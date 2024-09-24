@@ -1,6 +1,4 @@
 import React from 'react'
-import Infonav from './Infonav'
-import MainNav from './MainNav'
 import Hero from './Hero'
 import Brands from './Brands'
 import NewArrival from './NewArrival'
@@ -11,10 +9,6 @@ import { CustomersReview } from './CustomersReview'
 const App = () => {
   return (
     <main>
-      <section className='w-full'>
-        <Infonav/>
-        <MainNav/>
-      </section>
       <section className='w-full bg-gray-100 flex flex-col justify-center items-center lg:bg-white'>
         <Hero/>
         <Brands/>

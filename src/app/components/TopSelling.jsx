@@ -3,22 +3,23 @@ import Card from './Card';
 import { topSelling } from './constant'; // Ensure the path is correct
 import Button from './Button';
 
-const TopSelling = () => {
-    return (
-        <div className="width-container flex flex-col justify-center mt-6">
-          <h3 className="text-center font-integral text-4xl mb-12">TOP SELLING</h3>
-          <div className="grid grid-cols-2 gap-2 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4 container mx-auto px-2 w-full">
-            {topSelling.map((item) => (
-              <Card key={item.id} {...item} />
-            ))}
+const NewArrival = () => {
+  return (
+    <div className="width-container flex flex-col justify-center">
+      <h3 className="text-center font-integral text-4xl mb-12">NEW ARRIVALS</h3>
+      <div className="flex overflow-x-auto snap-x snap-mandatory justify-between items-center gap-2">
+        {topSelling.map((item) => (
+          <div className="flex-none snap-start" key={item.id}>
+            <Card {...item} />
           </div>
-          <div className='mt-12 text-center'>
-          <Button text="View More"/>
-          </div>
-          <hr className='mt-6' />
-        </div>
-      );
-  
-}
+        ))}
+      </div>
+      <div className='mt-12 text-center'>
+        <Button text="View More" />
+      </div>
+      <hr className='mt-6' />
+    </div>
+  );
+};
 
-export default TopSelling;
+export default NewArrival;

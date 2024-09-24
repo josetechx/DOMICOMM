@@ -31,6 +31,13 @@ import catImage2 from './formal-bg.png';
 import catImage3 from './party-bg.png';
 import catImage4 from './gym-bg.png';
 
+// debit card images
+import visa from './Visa.png'
+import Gpay from './G Pay.png'
+import mastercard from './Mastercard.png'
+import pay from './ Pay.png'
+import paypal from './Paypal.png'
+
 
 export {
 
@@ -56,6 +63,12 @@ export {
     prada,
     zara,
     calvin,
-    versache
+    versache,
+    visa,
+    Gpay,
+    mastercard,
+    pay,
+    paypal
+    
 
 }

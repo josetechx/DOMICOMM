@@ -13,10 +13,10 @@ const ReviewCard = ({
               {'★'.repeat(rating)}{'☆'.repeat(5 - rating)}
             </span>
           </figcaption>
-          <p className="text-xs font-medium text-gray-600 font-satoshi">{reviewerName}</p>
+          <p className="text-xs font-medium text-black font-satoshi pt-3">{reviewerName}</p>
         </div>
       </div>
-      <blockquote className="mt-2 text-xs text-gray-800 font-satoshi">{comment}</blockquote>
+      <blockquote className="mt-2 text-xs text-gray-600 font-satoshi">{comment}</blockquote>
     </figure>
   );
 };

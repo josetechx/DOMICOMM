@@ -19,7 +19,7 @@ const MainNav = () => {
         ))}
         </ul>
         <div className='hidden lg:block min-w-[400px]'>
-            <Input inputType="text" inputIcon={searchIcon}/>
+            <Input inputType="text" inputIcon={searchIcon} placeholder="Search for products..."/>
         </div>
         <div className='flex justify-between gap-2 items-center ml-auto'>
             <Image src={searchIcon} className='md:hidden' />

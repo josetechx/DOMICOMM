@@ -7,13 +7,15 @@ const NewArrival = () => {
   return (
     <div className="width-container flex flex-col justify-center">
       <h3 className="text-center font-integral text-4xl mb-12">NEW ARRIVALS</h3>
-      <div className="grid grid-cols-2 gap-2 sm:gap-4 sm:grid-cols-3 lg:grid-cols-4 container mx-auto px-2 w-full">
+      <div className="flex overflow-x-auto snap-x snap-mandatory justify-between items-center gap-2">
         {newArrivals.map((item) => (
-          <Card key={item.id} {...item} />
+          <div className="flex-none snap-start" key={item.id}>
+            <Card {...item} />
+          </div>
         ))}
       </div>
       <div className='mt-12 text-center'>
-      <Button text="View More"/>
+        <Button text="View More" />
       </div>
       <hr className='mt-6' />
     </div>

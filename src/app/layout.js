@@ -1,5 +1,9 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Infonav from "./components/Infonav";
+import MainNav from "./components/MainNav";
+import Footer from "./components/Footer";
+
 
 // Load the Integral CF font
 const integralCF = localFont({
@@ -28,7 +32,14 @@ export default function RootLayout({ children }) {
       <body
         className={`${integralCF.variable} ${satoshi.variable} font-sans antialiased`} // Include both font variables
       >
+        <header className='w-full'>
+        <Infonav/>
+        <MainNav/>
+      </header>
         {children}
+        <footer>
+          <Footer/>
+        </footer>
       </body>
     </html>
   );
