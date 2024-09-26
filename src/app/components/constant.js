@@ -1,13 +1,31 @@
 import { heroBg, newArrival1, newArrival2, newArrival3, newArrival4, gucci, calvin, versache, prada, zara, topSelling1, topSelling2, topSelling3, topSelling4 } from "../assest/images";
 
-// Navbar Links
+// Navbar Links with Submenus
 export const navbar = [
-  "On Shop", 
-  "On Sale", 
-  "New Arrivals", 
-  "Brands"
+  {
+    label: "On Shop",
+    submenu: ["All Products", "Categories", "Collections"]
+  },
+  {
+    label: "On Sale",
+    submenu: null
+  },
+  {
+    label: "New Arrivals",
+    submenu: null
+  },
+  {
+    label: "Brands",
+    submenu: ["Nike", "Adidas", "Puma"]
+  }
 ];
 
+export const dropdown = [
+  "Mens's wear",
+  "Women's wear",
+  "Kids wear",
+]
+   
 // Statistics Data
 export const statistics = [
   { id: 1, heading: "200+", description: "International Brands" },
@@ -22,28 +40,32 @@ export const newArrivals = [
     thumbnail: newArrival1,  // Corrected the typo from `thubnail` to `thumbnail`
     title: "T-shirt With Tape Details",
     rating: 4.5,
-    price: "120"
+    price: "120",
+    categories: "fashion"
   },
   {
     id: 2,
     thumbnail: newArrival2,
     title: "Skinny Fit Jeans",
     rating: 3.5,
-    price: "240"
+    price: "240",
+    categories: "party"
   },
   {
     id: 3,
     thumbnail: newArrival3,
     title: "Checkered Shirt",
     rating: 4.7,
-    price: "80"
+    price: "80",
+    categories: "fashion"
   },
   {
     id: 4,
     thumbnail: newArrival4,
     title: "Sleeve Stripped T-shirt",
     rating: 4.6,
-    price: "260"
+    price: "260",
+    categories:"fashion"
   }
 ];
 
@@ -53,28 +75,32 @@ export const topSelling = [
     thumbnail: topSelling1,  // Corrected the typo from `thubnail` to `thumbnail`
     title: "T-shirt With Tape Details",
     rating: 4.5,
-    price: "120"
+    price: "120",
+    categories: "casual"
   },
   {
     id: 2,
     thumbnail: topSelling2,
     title: "Skinny Fit Jeans",
     rating: 3.5,
-    price: "240"
+    price: "240",
+    categories: "casual"
   },
   {
     id: 3,
     thumbnail: topSelling3,
     title: "Checkered Shirt",
     rating: 4.7,
-    price: "80"
+    price: "80",
+    categories: "fashion"
   },
   {
     id: 4,
     thumbnail: topSelling4,
     title: "Sleeve Stripped T-shirt",
     rating: 4.6,
-    price: "260"
+    price: "260",
+    categories: "fashion"
   }
 ]
 
