@@ -20,6 +20,20 @@ export const navbar = [
   }
 ];
 
+export const navigationMap =[
+  {
+    label: "Home >",
+    submenu: null
+  },
+  {
+    label: "Shop > ",
+    submenu: ["All Products", "Categories", "Collections"]
+  },
+  {
+    label: "Brands",
+    submenu: ["Nike", "Adidas", "Puma"]
+  }
+] 
 export const dropdown = [
   "Mens's wear",
   "Women's wear",

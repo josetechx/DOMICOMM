@@ -38,6 +38,14 @@ import mastercard from './Mastercard.png'
 import pay from './ Pay.png'
 import paypal from './Paypal.png'
 
+// product-page images
+
+import productImage1 from './product-page-img1.png'
+import productImage2 from './product-page-img2.png'
+import productImage3 from './product-page-img3.png'
+import productthumbnail from './product-thumbnail.png'
+
+import colors from './colors.png'
 
 export {
 
@@ -68,7 +76,12 @@ export {
     Gpay,
     mastercard,
     pay,
-    paypal
+    paypal,
+    productImage1,
+    productImage2,
+    productImage3,
+    productthumbnail,
+    colors
     
 
 }
