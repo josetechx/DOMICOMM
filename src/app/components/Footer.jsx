@@ -90,7 +90,7 @@ const Footer = () => {
                 <p className='font-satoshi text-xs text-gray-700'>Shop.co © 2000-2024, All Rights Reserved</p>
                 <div className='flex justify-between items-center gap-2'>
                     {debitCardImages.map((card, index)=>(
-                        <Image key={index} src={card} alt={card} />
+                        <Image key={index} src={card} alt='debit-card' />
                     ))}
                 </div>
         </div>
