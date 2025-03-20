@@ -44,7 +44,7 @@ const Footer = () => {
               <h3 className="text-black mb-4 font-satoshi text-xs">COMPANY</h3>
               <ul>
                 {company.map((item, index)=>(
-                    <li className="mb-2 font-satoshi text-gray-800">
+                    <li key={index} className="mb-2 font-satoshi text-gray-800">
                     <a href={item.link} className="hover:text-white">{item.name}</a>
                    </li>
                 ))}
@@ -55,7 +55,7 @@ const Footer = () => {
               <h3 className="text-black mb-4 font-satoshi text-xs">HELP</h3>
               <ul>
               {help.map((item, index)=>(
-                    <li className="mb-2 font-satoshi text-gray-800">
+                    <li key={index} className="mb-2 font-satoshi text-gray-800">
                     <a href={item.link} className="hover:text-white">{item.name}</a>
                    </li>
                 ))}
@@ -66,7 +66,7 @@ const Footer = () => {
             <h3 className="text-black mb-4 font-satoshi text-xs">FAQ</h3>
               <ul>
               {faq.map((item, index)=>(
-                    <li className="mb-2 font-satoshi text-gray-800">
+                    <li key={index} className="mb-2 font-satoshi text-gray-800">
                     <a href={item.link} className="hover:text-white">{item.name}</a>
                    </li>
                 ))}
@@ -77,7 +77,7 @@ const Footer = () => {
             <h3 className="text-black mb-4 font-satoshi text-xs">RESOURCES</h3>
               <ul>
               {resources.map((item, index)=>(
-                    <li className="mb-2 font-satoshi text-gray-800">
+                    <li key={index} className="mb-2 font-satoshi text-gray-800">
                     <a href={item.link} className="hover:text-white">{item.name}</a>
                    </li>
                 ))}
@@ -89,8 +89,8 @@ const Footer = () => {
         <div className='width-container md:flex justify-between items-center'>
                 <p className='font-satoshi text-xs text-gray-700'>Shop.co © 2000-2024, All Rights Reserved</p>
                 <div className='flex justify-between items-center gap-2'>
-                    {debitCardImages.map((card)=>(
-                        <Image src={card} />
+                    {debitCardImages.map((card, index)=>(
+                        <Image key={index} src={card} alt={card} />
                     ))}
                 </div>
         </div>
