@@ -3,6 +3,7 @@ import "./globals.css";
 import Infonav from "./components/Infonav";
 import MainNav from "./components/MainNav";
 import Footer from "./components/Footer";
+import { Analytics } from '@vercel/analytics/next';
 
 
 // Load the Integral CF font
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
         <MainNav/>
       </header>
         {children}
+        <Analytics />
         <footer>
           <Footer/>
         </footer>
